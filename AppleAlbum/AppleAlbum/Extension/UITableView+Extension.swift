@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 extension UITableView {
-
   func registerNib(cellIdentifier: AACellIdentifierType) {
     let nib = UINib(nibName: cellIdentifier.rawValue, bundle: Bundle.main)
     register(nib, forCellReuseIdentifier: cellIdentifier.rawValue)

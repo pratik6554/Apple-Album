@@ -14,7 +14,7 @@ class AAAlbumTableCell: UITableViewCell {
   @IBOutlet weak var albumNameLabel: UILabel!
   @IBOutlet weak var artistNameLabel: UILabel!
 
-  func configure(album :AAAlbum) {
+  func configure(album: AAAlbum) {
     albumNameLabel.text = album.albumName
     artistNameLabel.text = album.artistName
     if let imageURL = album.imageURL {

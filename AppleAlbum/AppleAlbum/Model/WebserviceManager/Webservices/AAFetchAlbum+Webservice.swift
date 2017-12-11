@@ -9,7 +9,13 @@
 import Foundation
 
 extension AAWebServiceManager {
-  
+
+  /**
+   To fetch album list
+   - parameters:
+      - completion: AACompletionCallback<[AAAlbum]>
+   */
+
   static func fetchAlbumList(completion: @escaping AACompletionCallback<[AAAlbum]>) {
     let albumURL = URL(string: AAServiceURLInfo.albumeURL)
     guard let URL = albumURL else {
@@ -27,6 +33,13 @@ extension AAWebServiceManager {
     }
     task.resume()
   }
+
+  /**
+   To Map json data
+    - parameters:
+      - data: optiona Data
+      - completion: AACompletionCallback<[AAAlbum]>
+   */
 
   private static func mapJSONData(data: Data?, completion: @escaping AACompletionCallback<[AAAlbum]>) {
     guard let data = data else {
