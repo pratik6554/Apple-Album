@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AAAlbumTableCell" rowHeight="96" id="KGk-i7-Jjw" customClass="AAAlbumTableCell" customModule="AppleAlbum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCg-Mn-tSO" userLabel="backgroundView">
+                        <rect key="frame" x="10" y="5" width="297" height="85.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-u7-Nd3">
+                                <rect key="frame" x="8" y="12.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="K3L-ap-CYf"/>
+                                    <constraint firstAttribute="height" constant="60" id="uh5-gF-G67"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qj-ZQ-4xV">
+                                <rect key="frame" x="82" y="41.5" width="205" height="17"/>
+                                <string key="text">artist name
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0H-Re-N6y">
+                                <rect key="frame" x="82" y="18" width="205" height="20"/>
+                                <string key="text">Album name
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9529411792755127" green="0.9529411792755127" blue="0.9529411792755127" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w0H-Re-N6y" firstAttribute="centerY" secondItem="A4a-u7-Nd3" secondAttribute="centerY" constant="-15" id="0F0-pw-V7S"/>
+                            <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="trailing" secondItem="w0H-Re-N6y" secondAttribute="trailing" id="3Cv-ER-10f"/>
+                            <constraint firstItem="A4a-u7-Nd3" firstAttribute="leading" secondItem="xCg-Mn-tSO" secondAttribute="leading" constant="8" id="EJv-DN-9jj"/>
+                            <constraint firstItem="A4a-u7-Nd3" firstAttribute="top" secondItem="xCg-Mn-tSO" secondAttribute="top" constant="12.5" id="LRc-jr-3zA"/>
+                            <constraint firstAttribute="bottom" secondItem="A4a-u7-Nd3" secondAttribute="bottom" constant="13" id="RWu-47-SWz"/>
+                            <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="leading" secondItem="w0H-Re-N6y" secondAttribute="leading" id="Rlh-og-6PY"/>
+                            <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="top" secondItem="w0H-Re-N6y" secondAttribute="bottom" constant="4" id="aam-m0-Wy6"/>
+                            <constraint firstItem="w0H-Re-N6y" firstAttribute="leading" secondItem="A4a-u7-Nd3" secondAttribute="trailing" constant="14" id="rDl-5q-Kmi"/>
+                            <constraint firstAttribute="trailing" secondItem="w0H-Re-N6y" secondAttribute="trailing" constant="10" id="w4a-gx-KRz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEA-Oo-ZjG" userLabel="Seperator View">
+                        <rect key="frame" x="20" y="93.5" width="277" height="1"/>
+                        <color key="backgroundColor" red="0.69803923368453979" green="0.69803923368453979" blue="0.69803923368453979" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="03q-e0-S5R"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xCg-Mn-tSO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5C9-ZB-Tjj"/>
+                    <constraint firstAttribute="bottom" secondItem="xCg-Mn-tSO" secondAttribute="bottom" constant="5" id="8VF-l1-1Ul"/>
+                    <constraint firstAttribute="bottom" secondItem="qEA-Oo-ZjG" secondAttribute="bottom" constant="1" id="DeW-11-2Po"/>
+                    <constraint firstItem="xCg-Mn-tSO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="H8u-xl-XXD"/>
+                    <constraint firstAttribute="trailing" secondItem="xCg-Mn-tSO" secondAttribute="trailing" constant="10" id="Qi3-z1-w4T"/>
+                    <constraint firstAttribute="trailing" secondItem="qEA-Oo-ZjG" secondAttribute="trailing" constant="20" id="Wv3-uZ-nmS"/>
+                    <constraint firstItem="qEA-Oo-ZjG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="l8z-Yr-fAB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumCoverImageView" destination="A4a-u7-Nd3" id="mXB-v6-dLJ"/>
+                <outlet property="albumNameLabel" destination="w0H-Re-N6y" id="sWa-Y7-kjC"/>
+                <outlet property="artistNameLabel" destination="2Qj-ZQ-4xV" id="ZsK-lx-5CN"/>
+            </connections>
+            <point key="canvasLocation" x="-81" y="11"/>
+        </tableViewCell>
+    </objects>
+</document>

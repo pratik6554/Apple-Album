@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C428E7911FDE4D23004BE972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7901FDE4D23004BE972 /* AppDelegate.swift */; };
+		C428E7961FDE4D23004BE972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C428E7941FDE4D23004BE972 /* Main.storyboard */; };
+		C428E7981FDE4D23004BE972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C428E7971FDE4D23004BE972 /* Assets.xcassets */; };
+		C428E79B1FDE4D23004BE972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C428E7991FDE4D23004BE972 /* LaunchScreen.storyboard */; };
+		C428E7A41FDE4DA7004BE972 /* AAPhotoAlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7A31FDE4DA7004BE972 /* AAPhotoAlbumTableViewController.swift */; };
+		C428E7A81FDE4E39004BE972 /* AAAlbumTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7A61FDE4E39004BE972 /* AAAlbumTableCell.swift */; };
+		C428E7A91FDE4E39004BE972 /* AAAlbumTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C428E7A71FDE4E39004BE972 /* AAAlbumTableCell.xib */; };
+		C428E7AC1FDE50D0004BE972 /* WCConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7AB1FDE50D0004BE972 /* WCConstant.swift */; };
+		C428E7AF1FDE5236004BE972 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7AE1FDE5236004BE972 /* UITableView+Extension.swift */; };
+		C428E7B21FDE5438004BE972 /* AAWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7B11FDE5438004BE972 /* AAWebServiceManager.swift */; };
+		C428E7B51FDE5FFF004BE972 /* AAAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7B41FDE5FFF004BE972 /* AAAlbum.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C428E78D1FDE4D23004BE972 /* AppleAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C428E7901FDE4D23004BE972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C428E7951FDE4D23004BE972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C428E7971FDE4D23004BE972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C428E79A1FDE4D23004BE972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C428E79C1FDE4D23004BE972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C428E7A31FDE4DA7004BE972 /* AAPhotoAlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAPhotoAlbumTableViewController.swift; sourceTree = "<group>"; };
+		C428E7A61FDE4E39004BE972 /* AAAlbumTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAAlbumTableCell.swift; sourceTree = "<group>"; };
+		C428E7A71FDE4E39004BE972 /* AAAlbumTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AAAlbumTableCell.xib; sourceTree = "<group>"; };
+		C428E7AB1FDE50D0004BE972 /* WCConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCConstant.swift; sourceTree = "<group>"; };
+		C428E7AE1FDE5236004BE972 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		C428E7B11FDE5438004BE972 /* AAWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWebServiceManager.swift; sourceTree = "<group>"; };
+		C428E7B41FDE5FFF004BE972 /* AAAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAAlbum.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C428E78A1FDE4D22004BE972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C428E7841FDE4D22004BE972 = {
+			isa = PBXGroup;
+			children = (
+				C428E78F1FDE4D23004BE972 /* AppleAlbum */,
+				C428E78E1FDE4D23004BE972 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C428E78E1FDE4D23004BE972 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C428E78D1FDE4D23004BE972 /* AppleAlbum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C428E78F1FDE4D23004BE972 /* AppleAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				C428E7B01FDE541E004BE972 /* Model */,
+				C428E7AD1FDE5218004BE972 /* Extension */,
+				C428E7AA1FDE50BF004BE972 /* Constant */,
+				C428E7A51FDE4E00004BE972 /* View */,
+				C428E7A21FDE4D5B004BE972 /* Controller */,
+				C428E7901FDE4D23004BE972 /* AppDelegate.swift */,
+				C428E7941FDE4D23004BE972 /* Main.storyboard */,
+				C428E7971FDE4D23004BE972 /* Assets.xcassets */,
+				C428E7991FDE4D23004BE972 /* LaunchScreen.storyboard */,
+				C428E79C1FDE4D23004BE972 /* Info.plist */,
+			);
+			path = AppleAlbum;
+			sourceTree = "<group>";
+		};
+		C428E7A21FDE4D5B004BE972 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C428E7A31FDE4DA7004BE972 /* AAPhotoAlbumTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C428E7A51FDE4E00004BE972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C428E7A61FDE4E39004BE972 /* AAAlbumTableCell.swift */,
+				C428E7A71FDE4E39004BE972 /* AAAlbumTableCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C428E7AA1FDE50BF004BE972 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				C428E7AB1FDE50D0004BE972 /* WCConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		C428E7AD1FDE5218004BE972 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C428E7AE1FDE5236004BE972 /* UITableView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C428E7B01FDE541E004BE972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C428E7B31FDE5FE3004BE972 /* WebserviceManager */,
+				C428E7B41FDE5FFF004BE972 /* AAAlbum.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C428E7B31FDE5FE3004BE972 /* WebserviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				C428E7B11FDE5438004BE972 /* AAWebServiceManager.swift */,
+			);
+			path = WebserviceManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C428E78C1FDE4D22004BE972 /* AppleAlbum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C428E79F1FDE4D23004BE972 /* Build configuration list for PBXNativeTarget "AppleAlbum" */;
+			buildPhases = (
+				C428E7891FDE4D22004BE972 /* Sources */,
+				C428E78A1FDE4D22004BE972 /* Frameworks */,
+				C428E78B1FDE4D22004BE972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleAlbum;
+			productName = AppleAlbum;
+			productReference = C428E78D1FDE4D23004BE972 /* AppleAlbum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C428E7851FDE4D22004BE972 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Pratik Gandhi";
+				TargetAttributes = {
+					C428E78C1FDE4D22004BE972 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C428E7881FDE4D22004BE972 /* Build configuration list for PBXProject "AppleAlbum" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C428E7841FDE4D22004BE972;
+			productRefGroup = C428E78E1FDE4D23004BE972 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C428E78C1FDE4D22004BE972 /* AppleAlbum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C428E78B1FDE4D22004BE972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C428E7A91FDE4E39004BE972 /* AAAlbumTableCell.xib in Resources */,
+				C428E79B1FDE4D23004BE972 /* LaunchScreen.storyboard in Resources */,
+				C428E7981FDE4D23004BE972 /* Assets.xcassets in Resources */,
+				C428E7961FDE4D23004BE972 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C428E7891FDE4D22004BE972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C428E7A41FDE4DA7004BE972 /* AAPhotoAlbumTableViewController.swift in Sources */,
+				C428E7B51FDE5FFF004BE972 /* AAAlbum.swift in Sources */,
+				C428E7A81FDE4E39004BE972 /* AAAlbumTableCell.swift in Sources */,
+				C428E7B21FDE5438004BE972 /* AAWebServiceManager.swift in Sources */,
+				C428E7AF1FDE5236004BE972 /* UITableView+Extension.swift in Sources */,
+				C428E7911FDE4D23004BE972 /* AppDelegate.swift in Sources */,
+				C428E7AC1FDE50D0004BE972 /* WCConstant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C428E7941FDE4D23004BE972 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C428E7951FDE4D23004BE972 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C428E7991FDE4D23004BE972 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C428E79A1FDE4D23004BE972 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C428E79D1FDE4D23004BE972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C428E79E1FDE4D23004BE972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C428E7A01FDE4D23004BE972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDSKJVXU74;
+				INFOPLIST_FILE = AppleAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guru.test.AppleAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C428E7A11FDE4D23004BE972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDSKJVXU74;
+				INFOPLIST_FILE = AppleAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guru.test.AppleAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C428E7881FDE4D22004BE972 /* Build configuration list for PBXProject "AppleAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C428E79D1FDE4D23004BE972 /* Debug */,
+				C428E79E1FDE4D23004BE972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C428E79F1FDE4D23004BE972 /* Build configuration list for PBXNativeTarget "AppleAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C428E7A01FDE4D23004BE972 /* Debug */,
+				C428E7A11FDE4D23004BE972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C428E7851FDE4D22004BE972 /* Project object */;
+}
