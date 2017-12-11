@@ -23,6 +23,7 @@
 		C471605E1FDEA10A006DD763 /* AAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471605D1FDEA10A006DD763 /* AAError.swift */; };
 		C47160601FDEA8DC006DD763 /* AACompletionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471605F1FDEA8DC006DD763 /* AACompletionResponse.swift */; };
 		C47160621FDEAAE1006DD763 /* AACallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47160611FDEAAE1006DD763 /* AACallbacks.swift */; };
+		C47160641FDEB0E1006DD763 /* AAFetchAlbum+Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47160631FDEB0E1006DD763 /* AAFetchAlbum+Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		C471605D1FDEA10A006DD763 /* AAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAError.swift; sourceTree = "<group>"; };
 		C471605F1FDEA8DC006DD763 /* AACompletionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AACompletionResponse.swift; sourceTree = "<group>"; };
 		C47160611FDEAAE1006DD763 /* AACallbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AACallbacks.swift; sourceTree = "<group>"; };
+		C47160631FDEB0E1006DD763 /* AAFetchAlbum+Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AAFetchAlbum+Webservice.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,9 +142,18 @@
 		C428E7B31FDE5FE3004BE972 /* WebserviceManager */ = {
 			isa = PBXGroup;
 			children = (
+				C47160651FDEB0E6006DD763 /* Webservices */,
 				C428E7B11FDE5438004BE972 /* AAWebServiceManager.swift */,
 			);
 			path = WebserviceManager;
+			sourceTree = "<group>";
+		};
+		C47160651FDEB0E6006DD763 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				C47160631FDEB0E1006DD763 /* AAFetchAlbum+Webservice.swift */,
+			);
+			path = Webservices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 				C471605E1FDEA10A006DD763 /* AAError.swift in Sources */,
 				C428E7AF1FDE5236004BE972 /* UITableView+Extension.swift in Sources */,
 				C428E7911FDE4D23004BE972 /* AppDelegate.swift in Sources */,
+				C47160641FDEB0E1006DD763 /* AAFetchAlbum+Webservice.swift in Sources */,
 				C428E7AC1FDE50D0004BE972 /* WCConstant.swift in Sources */,
 				C47160601FDEA8DC006DD763 /* AACompletionResponse.swift in Sources */,
 			);

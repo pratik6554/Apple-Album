@@ -14,16 +14,26 @@ class AAPhotoAlbumTableViewController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 96.0
     tableView.registerNib(cellIdentifier: AACellIdentifierType.AlbumTableCell)
     refreshAlbumList()
   }
 
   func refreshAlbumList() {
-    AAWebServiceManager.shared.fetchAlbumList { [weak self] (albumList) in
+
+    AAWebServiceManager.fetchAlbumList { [weak self] (response) in
       guard let weakSelf = self else { return }
-      weakSelf.albumList = albumList
-      DispatchQueue.main.async {
-        weakSelf.tableView.reloadData()
+
+      if response.isFailure {
+        print("Error == \(String(describing: response.error))")
+      } else {
+        if let value = response.value {
+          weakSelf.albumList = value
+          DispatchQueue.main.async {
+            weakSelf.tableView.reloadData()
+          }
+        }
       }
     }
   }

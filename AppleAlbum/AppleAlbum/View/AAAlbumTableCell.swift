@@ -14,16 +14,6 @@ class AAAlbumTableCell: UITableViewCell {
   @IBOutlet weak var albumNameLabel: UILabel!
   @IBOutlet weak var artistNameLabel: UILabel!
 
-  override func awakeFromNib() {
-    super.awakeFromNib()
-    // Initialization code
-  }
-
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-    // Configure the view for the selected state
-  }
-
   func configure(album :AAAlbum) {
     albumNameLabel.text = album.albumName
     artistNameLabel.text = album.artistName
@@ -31,5 +21,4 @@ class AAAlbumTableCell: UITableViewCell {
       albumCoverImageView.setImageFromCache(withUrl: imageURL)
     }
   }
-
 }

@@ -8,4 +8,4 @@
 
 import Foundation
 
-typealias AACompletionCallback = (AACompletionResponse) -> Void
+typealias AACompletionCallback<Object> = (AACompletionResponse<Object>) -> Void

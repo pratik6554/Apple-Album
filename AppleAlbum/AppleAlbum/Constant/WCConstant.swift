@@ -17,7 +17,6 @@ enum AAServerKeys: String {
 
   case feed = "feed"
   case entry = "entry"
-
   case im_name = "im:name"
   case label = "label"
   case im_artist = "im:artist"
@@ -26,8 +25,7 @@ enum AAServerKeys: String {
 
 enum AAServiceURLInfo {
 
-  static let numberOfAlbumToFetch = 10
-
+  static let numberOfAlbumToFetch = 15
   static var albumeURL: String {
     return "https://itunes.apple.com/us/rss/topalbums/limit=\(numberOfAlbumToFetch)/json"
   }

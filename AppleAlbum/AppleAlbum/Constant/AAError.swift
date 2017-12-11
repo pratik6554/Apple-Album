@@ -8,13 +8,15 @@
 
 import Foundation
 
-enum AAParsingError: Error {
-  case missing(String)
-  case invalid(String, Any)
-}
-
-enum AAServiceResponseError: Error {
+enum AAServiceError: Error {
   case invalidJSONData
+  case invalidAlbumUrl
+  case jsonDataparsingError
 }
 
+extension Error {
+  func handleError() {
+
+  }
+}
 

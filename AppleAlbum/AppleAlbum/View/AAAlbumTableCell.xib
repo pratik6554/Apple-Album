@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AAAlbumTableCell" rowHeight="96" id="KGk-i7-Jjw" customClass="AAAlbumTableCell" customModule="AppleAlbum" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AAAlbumTableCell" id="KGk-i7-Jjw" customClass="AAAlbumTableCell" customModule="AppleAlbum" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="317" height="96"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -30,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qj-ZQ-4xV">
-                                <rect key="frame" x="82" y="41.5" width="205" height="17"/>
+                                <rect key="frame" x="82" y="46" width="205" height="17"/>
                                 <string key="text">artist name
 </string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0H-Re-N6y">
-                                <rect key="frame" x="82" y="18" width="205" height="20"/>
+                                <rect key="frame" x="82" y="22.5" width="205" height="20"/>
                                 <string key="text">Album name
 </string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
@@ -48,15 +48,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.9529411792755127" green="0.9529411792755127" blue="0.9529411792755127" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="w0H-Re-N6y" firstAttribute="centerY" secondItem="A4a-u7-Nd3" secondAttribute="centerY" constant="-15" id="0F0-pw-V7S"/>
                             <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="trailing" secondItem="w0H-Re-N6y" secondAttribute="trailing" id="3Cv-ER-10f"/>
                             <constraint firstItem="A4a-u7-Nd3" firstAttribute="leading" secondItem="xCg-Mn-tSO" secondAttribute="leading" constant="8" id="EJv-DN-9jj"/>
                             <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="leading" secondItem="w0H-Re-N6y" secondAttribute="leading" id="Rlh-og-6PY"/>
-                            <constraint firstAttribute="height" constant="85.5" id="Wzl-qs-ZeR"/>
+                            <constraint firstItem="A4a-u7-Nd3" firstAttribute="top" secondItem="xCg-Mn-tSO" secondAttribute="top" constant="12.5" id="YDm-Po-POk"/>
                             <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="top" secondItem="w0H-Re-N6y" secondAttribute="bottom" constant="4" id="aam-m0-Wy6"/>
-                            <constraint firstItem="A4a-u7-Nd3" firstAttribute="centerY" secondItem="xCg-Mn-tSO" secondAttribute="centerY" id="qfn-vp-PsN"/>
+                            <constraint firstItem="w0H-Re-N6y" firstAttribute="centerY" secondItem="A4a-u7-Nd3" secondAttribute="centerY" constant="-10" id="hdT-36-Rxw"/>
                             <constraint firstItem="w0H-Re-N6y" firstAttribute="leading" secondItem="A4a-u7-Nd3" secondAttribute="trailing" constant="14" id="rDl-5q-Kmi"/>
                             <constraint firstAttribute="trailing" secondItem="w0H-Re-N6y" secondAttribute="trailing" constant="10" id="w4a-gx-KRz"/>
+                            <constraint firstAttribute="bottom" secondItem="A4a-u7-Nd3" secondAttribute="bottom" constant="13" id="xXk-SI-s7K"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEA-Oo-ZjG" userLabel="Seperator View">

@@ -8,9 +8,9 @@
 
 import Foundation
 
-public enum AACompletionResponse {
+public enum AACompletionResponse<Object> {
 
-  case success(AnyObject)
+  case success(Object)
   case failure(Data?, Error?)
 
   public var isSuccess: Bool {
@@ -26,10 +26,10 @@ public enum AACompletionResponse {
     return !isSuccess
   }
 
-  public var value: AnyObject? {
+  public var value: Object? {
     switch self {
-    case .success(let value):
-      return value
+    case .success(let Object):
+      return Object
     case .failure:
       return nil
     }
