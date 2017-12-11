@@ -25,7 +25,7 @@ enum AAServerKeys: String {
 }
 
 enum AAServiceURLInfo {
-  static let numberOfAlbumToFetch = 15
+  static let numberOfAlbumToFetch = 25
   static var albumeURL: String {
     return "https://itunes.apple.com/us/rss/topalbums/limit=\(numberOfAlbumToFetch)/json"
   }
