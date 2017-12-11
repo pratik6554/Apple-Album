@@ -33,6 +33,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Top Albums" id="fbu-Uf-fpa"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="rGX-R4-YlP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Refreshing album list...">
+                                <attributes>
+                                    <color key="NSColor" red="0.23921568691730499" green="0.28627452254295349" blue="0.34509804844856262" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name=".SFNSText"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <connections>
+                            <action selector="refresh:" destination="fr8-zm-LFp" eventType="valueChanged" id="6FM-Wr-1EQ"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9U-dJ-1cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

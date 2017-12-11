@@ -21,6 +21,8 @@ enum AAServerKeys: String {
   case label = "label"
   case im_artist = "im:artist"
   case im_image = "im:image"
+  case attributes = "attributes"
+  case href = "href"
 }
 
 enum AAServiceURLInfo {
