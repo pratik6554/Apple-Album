@@ -115,10 +115,10 @@ extension AAPhotoAlbumTableViewController{
   }
 }
 
-extension AAPhotoAlbumTableViewController : SFSafariViewControllerDelegate {
+extension AAPhotoAlbumTableViewController: SFSafariViewControllerDelegate {
 
   func pushArtistDetailViewControllerForAlbum(_ album :AAAlbum) {
-    if let artistPageURl = album.artistPageUrl,
+    if let _ = album.artistPageUrl,
       let url = NSURL(string: "https://www.apple.com") {
       let safariViewController = SFSafariViewController(url: url as URL)
       safariViewController.delegate = self
@@ -129,5 +129,4 @@ extension AAPhotoAlbumTableViewController : SFSafariViewControllerDelegate {
   func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
     dismiss(animated: true, completion: nil)
   }
-
 }

@@ -13,7 +13,6 @@ class AAWebServiceManager {
 
   static let shared = AAWebServiceManager()
   let session = URLSession.shared
-
   private init() {}
 }
 
