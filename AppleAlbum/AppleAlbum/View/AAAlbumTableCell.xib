@@ -51,10 +51,10 @@
                             <constraint firstItem="w0H-Re-N6y" firstAttribute="centerY" secondItem="A4a-u7-Nd3" secondAttribute="centerY" constant="-15" id="0F0-pw-V7S"/>
                             <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="trailing" secondItem="w0H-Re-N6y" secondAttribute="trailing" id="3Cv-ER-10f"/>
                             <constraint firstItem="A4a-u7-Nd3" firstAttribute="leading" secondItem="xCg-Mn-tSO" secondAttribute="leading" constant="8" id="EJv-DN-9jj"/>
-                            <constraint firstItem="A4a-u7-Nd3" firstAttribute="top" secondItem="xCg-Mn-tSO" secondAttribute="top" constant="12.5" id="LRc-jr-3zA"/>
-                            <constraint firstAttribute="bottom" secondItem="A4a-u7-Nd3" secondAttribute="bottom" constant="13" id="RWu-47-SWz"/>
                             <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="leading" secondItem="w0H-Re-N6y" secondAttribute="leading" id="Rlh-og-6PY"/>
+                            <constraint firstAttribute="height" constant="85.5" id="Wzl-qs-ZeR"/>
                             <constraint firstItem="2Qj-ZQ-4xV" firstAttribute="top" secondItem="w0H-Re-N6y" secondAttribute="bottom" constant="4" id="aam-m0-Wy6"/>
+                            <constraint firstItem="A4a-u7-Nd3" firstAttribute="centerY" secondItem="xCg-Mn-tSO" secondAttribute="centerY" id="qfn-vp-PsN"/>
                             <constraint firstItem="w0H-Re-N6y" firstAttribute="leading" secondItem="A4a-u7-Nd3" secondAttribute="trailing" constant="14" id="rDl-5q-Kmi"/>
                             <constraint firstAttribute="trailing" secondItem="w0H-Re-N6y" secondAttribute="trailing" constant="10" id="w4a-gx-KRz"/>
                         </constraints>

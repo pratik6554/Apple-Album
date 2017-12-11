@@ -18,6 +18,11 @@
 		C428E7AF1FDE5236004BE972 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7AE1FDE5236004BE972 /* UITableView+Extension.swift */; };
 		C428E7B21FDE5438004BE972 /* AAWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7B11FDE5438004BE972 /* AAWebServiceManager.swift */; };
 		C428E7B51FDE5FFF004BE972 /* AAAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428E7B41FDE5FFF004BE972 /* AAAlbum.swift */; };
+		C471605A1FDE84E7006DD763 /* AATypealise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47160591FDE84E7006DD763 /* AATypealise.swift */; };
+		C471605C1FDE8F56006DD763 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471605B1FDE8F56006DD763 /* UIImageView+Extension.swift */; };
+		C471605E1FDEA10A006DD763 /* AAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471605D1FDEA10A006DD763 /* AAError.swift */; };
+		C47160601FDEA8DC006DD763 /* AACompletionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471605F1FDEA8DC006DD763 /* AACompletionResponse.swift */; };
+		C47160621FDEAAE1006DD763 /* AACallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47160611FDEAAE1006DD763 /* AACallbacks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		C428E7AE1FDE5236004BE972 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		C428E7B11FDE5438004BE972 /* AAWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAWebServiceManager.swift; sourceTree = "<group>"; };
 		C428E7B41FDE5FFF004BE972 /* AAAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAAlbum.swift; sourceTree = "<group>"; };
+		C47160591FDE84E7006DD763 /* AATypealise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AATypealise.swift; sourceTree = "<group>"; };
+		C471605B1FDE8F56006DD763 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		C471605D1FDEA10A006DD763 /* AAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAError.swift; sourceTree = "<group>"; };
+		C471605F1FDEA8DC006DD763 /* AACompletionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AACompletionResponse.swift; sourceTree = "<group>"; };
+		C47160611FDEAAE1006DD763 /* AACallbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AACallbacks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				C428E7AB1FDE50D0004BE972 /* WCConstant.swift */,
+				C47160591FDE84E7006DD763 /* AATypealise.swift */,
+				C471605D1FDEA10A006DD763 /* AAError.swift */,
+				C471605F1FDEA8DC006DD763 /* AACompletionResponse.swift */,
+				C47160611FDEAAE1006DD763 /* AACallbacks.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -109,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C428E7AE1FDE5236004BE972 /* UITableView+Extension.swift */,
+				C471605B1FDE8F56006DD763 /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -205,11 +220,16 @@
 			files = (
 				C428E7A41FDE4DA7004BE972 /* AAPhotoAlbumTableViewController.swift in Sources */,
 				C428E7B51FDE5FFF004BE972 /* AAAlbum.swift in Sources */,
+				C47160621FDEAAE1006DD763 /* AACallbacks.swift in Sources */,
+				C471605A1FDE84E7006DD763 /* AATypealise.swift in Sources */,
+				C471605C1FDE8F56006DD763 /* UIImageView+Extension.swift in Sources */,
 				C428E7A81FDE4E39004BE972 /* AAAlbumTableCell.swift in Sources */,
 				C428E7B21FDE5438004BE972 /* AAWebServiceManager.swift in Sources */,
+				C471605E1FDEA10A006DD763 /* AAError.swift in Sources */,
 				C428E7AF1FDE5236004BE972 /* UITableView+Extension.swift in Sources */,
 				C428E7911FDE4D23004BE972 /* AppDelegate.swift in Sources */,
 				C428E7AC1FDE50D0004BE972 /* WCConstant.swift in Sources */,
+				C47160601FDEA8DC006DD763 /* AACompletionResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

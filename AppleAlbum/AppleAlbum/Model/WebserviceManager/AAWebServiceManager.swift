@@ -17,9 +17,8 @@ class AAWebServiceManager {
   private init() {
   }
 
-  func fetchAlbumList() {
-    let albumURLString = "https://itunes.apple.com/us/rss/topalbums/limit=2/json"
-    let albumURL = URL(string: albumURLString)
+  func fetchAlbumList(completion: @escaping ([AAAlbum]) -> Void) {
+    let albumURL = URL(string: AAServiceURLInfo.albumeURL)
     //TODO: Handle Error
     //TODO: Check this
     guard let URL = albumURL else {
@@ -28,50 +27,35 @@ class AAWebServiceManager {
     }
     let urlRequest = URLRequest(url: URL)
 
-   let task =  session.dataTask(with: urlRequest) { (data, response, error) in
-      if error != nil {
-        print("Error == \(String(describing: error)) ")
+    let task =  session.dataTask(with: urlRequest) { (data, response, error) in
+
+      if error == nil {
+        self.mapJSONData(data: data, completion: completion)
       } else {
-        print("response = \(String(describing: data))")
-
-        guard let data = data  else {
-           print("Something wrong with response data")
-           return
-        }
-        //TODO: handle exceptions
-        if let dataDict = try? JSONSerialization.jsonObject(with: data, options: []) as? [String : Any] {
-          print("dataDict = \(String(describing: dataDict))")
-
-          if let dataDict = dataDict,let feed = dataDict["feed"] as? [String :Any] {
-            if let entry = feed["entry"]  {
-                print("entry \(entry)")
-              self.handleResponse(entry: entry)
-            }
-          }
-        }
+        print("Error == \(String(describing: error)) ")
       }
     }
-   task.resume()
+    task.resume()
   }
 
-  func handleResponse(entry :Any) {
+  func mapJSONData(data: Data?, completion: @escaping ([AAAlbum]) -> Void) {
 
-    if let entryList = entry as? NSArray {
-        print("entryList count == \(entryList.count)")
+    guard let data = data else {
+      print("Something wrong")
+      return
     }
-  }
 
-  func mapAlbum(entryList :NSArray ) -> [AAAlbum] {
-
-    var albumList :[AAAlbum] = []
-    for entry in entryList {
-
-      if let entryDict = entry as? [String :Any] {
-        let albumName = entryDict["im:name"]
-      }
-
+    do {
+      if let dataDict = try JSONSerialization.jsonObject(with: data, options: []) as? JSON,
+          let feed = dataDict[AAServerKeys.feed.rawValue] as? JSON,
+          let entryList = feed[AAServerKeys.entry.rawValue] as? [JSON] {
+          let albumList =  entryList.flatMap { AAAlbum(json: $0) }
+          completion(albumList)
+        }
     }
-    return albumList
+    catch  {
+      print("Error ")
+    }
   }
 
 }
