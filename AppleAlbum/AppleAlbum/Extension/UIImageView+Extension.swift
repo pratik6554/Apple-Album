@@ -12,8 +12,8 @@ import UIKit
 let AAImageCache = NSCache<NSString, UIImage>()
 
 extension UIImageView {
+
   func setImageFromCache(withUrl urlString : String) {
-    
     let key = (urlString as NSString)
     let url =  URL(string: urlString)
     self.image = nil

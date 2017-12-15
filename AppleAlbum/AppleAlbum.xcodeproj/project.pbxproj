@@ -112,11 +112,11 @@
 		C428E7AA1FDE50BF004BE972 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				C428E7AB1FDE50D0004BE972 /* WCConstant.swift */,
-				C47160591FDE84E7006DD763 /* AATypealise.swift */,
-				C471605D1FDEA10A006DD763 /* AAError.swift */,
-				C471605F1FDEA8DC006DD763 /* AACompletionResponse.swift */,
 				C47160611FDEAAE1006DD763 /* AACallbacks.swift */,
+				C471605F1FDEA8DC006DD763 /* AACompletionResponse.swift */,
+				C471605D1FDEA10A006DD763 /* AAError.swift */,
+				C47160591FDE84E7006DD763 /* AATypealise.swift */,
+				C428E7AB1FDE50D0004BE972 /* WCConstant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";

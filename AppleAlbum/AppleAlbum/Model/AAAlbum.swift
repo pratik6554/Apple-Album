@@ -14,7 +14,7 @@ struct AAAlbum {
   var artistPageUrl :String?
   var imageURL: String?
 
-  init(json :JSON) {
+  init(json: JSON) {
 
     if let albumInfo = json[AAServerKeys.im_name.rawValue] as? JSON {
       albumName = albumInfo[AAServerKeys.label.rawValue] as? String ?? ""
